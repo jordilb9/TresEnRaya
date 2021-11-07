@@ -144,8 +144,6 @@ class MainActivity : AppCompatActivity() {
     fun comprovarTauler(): Int{
 
         var posicioM = (0..8).random()
-//        var opcions: String = ""
-//        var opcionsM: String = ""
         var posC = arrayListOf<Int>()
         var posCM = arrayListOf<Int>()
 
@@ -164,9 +162,6 @@ class MainActivity : AppCompatActivity() {
 
         posC.sortedBy { it }
 
-        //for (pos2 in posC){
-
-           // opcions += pos2.toString()
 
             if(posC.contains(0) && posC.contains(1)){
                 posicioM = 2
@@ -257,13 +252,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-        //}
 
         posCM.sortedBy { it }
 
-       // for (pos3 in posCM){
-
-           //opcionsM += pos3.toString()
 
             if(posC.contains(0) && posC.contains(1)){
                 posicioM = 2
@@ -353,7 +344,6 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-       // }
 
         return posicioM
 
