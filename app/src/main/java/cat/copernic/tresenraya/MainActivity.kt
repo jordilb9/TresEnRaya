@@ -256,94 +256,94 @@ class MainActivity : AppCompatActivity() {
         posCM.sortedBy { it }
 
 
-            if(posC.contains(0) && posC.contains(1)){
-                posicioM = 2
+        if(posCM.contains(0) && posCM.contains(1)){
+            posicioM = 2
+        }else{
+            if (posCM.contains(0) && posCM.contains(2)){
+                posicioM = 1
             }else{
-                if (posC.contains(0) && posC.contains(2)){
-                    posicioM = 1
-                }else{
-                    if (posC.contains(1) && posC.contains(2)){
-                        posicioM = 0
-                    }
+                if (posCM.contains(1) && posCM.contains(2)){
+                    posicioM = 0
                 }
             }
-            if(posC.contains(3) && posC.contains(4)){
-                posicioM = 5
+        }
+        if(posCM.contains(3) && posCM.contains(4)){
+            posicioM = 5
+        }else{
+            if (posCM.contains(3) && posCM.contains(5)){
+                posicioM = 4
             }else{
-                if (posC.contains(3) && posC.contains(5)){
-                    posicioM = 4
-                }else{
-                    if (posC.contains(4) && posC.contains(5)){
-                        posicioM = 3
-                    }
-                }
-            }
-            if(posC.contains(6) && posC.contains(7)){
-                posicioM = 8
-            }else{
-                if (posC.contains(6) && posC.contains(8)){
-                    posicioM = 7
-                }else{
-                    if (posC.contains(7) && posC.contains(8)){
-                        posicioM = 6
-                    }
-                }
-            }
-            if(posC.contains(0) && posC.contains(3)){
-                posicioM = 6
-            }else{
-                if (posC.contains(0) && posC.contains(6)){
+                if (posCM.contains(4) && posCM.contains(5)){
                     posicioM = 3
-                }else{
-                    if (posC.contains(3) && posC.contains(6)){
-                        posicioM = 0
-                    }
                 }
             }
-            if(posC.contains(1) && posC.contains(4)){
+        }
+        if(posCM.contains(6) && posCM.contains(7)){
+            posicioM = 8
+        }else{
+            if (posCM.contains(6) && posCM.contains(8)){
                 posicioM = 7
             }else{
-                if (posC.contains(1) && posC.contains(7)){
-                    posicioM = 4
-                }else{
-                    if (posC.contains(4) && posC.contains(7)){
-                        posicioM = 1
-                    }
+                if (posCM.contains(7) && posCM.contains(8)){
+                    posicioM = 6
                 }
             }
-            if(posC.contains(2) && posC.contains(5)){
-                posicioM = 8
+        }
+        if(posCM.contains(0) && posCM.contains(3)){
+            posicioM = 6
+        }else{
+            if (posCM.contains(0) && posCM.contains(6)){
+                posicioM = 3
             }else{
-                if (posC.contains(2) && posC.contains(8)){
-                    posicioM = 5
-                }else{
-                    if (posC.contains(5) && posC.contains(8)){
-                        posicioM = 2
-                    }
+                if (posCM.contains(3) && posCM.contains(6)){
+                    posicioM = 0
                 }
             }
-            if(posC.contains(0) && posC.contains(4)){
-                posicioM = 8
+        }
+        if(posCM.contains(1) && posCM.contains(4)){
+            posicioM = 7
+        }else{
+            if (posCM.contains(1) && posCM.contains(7)){
+                posicioM = 4
             }else{
-                if (posC.contains(0) && posC.contains(8)){
-                    posicioM = 4
-                }else{
-                    if (posC.contains(4) && posC.contains(8)){
-                        posicioM = 0
-                    }
+                if (posCM.contains(4) && posCM.contains(7)){
+                    posicioM = 1
                 }
             }
-            if(posC.contains(2) && posC.contains(4)){
-                posicioM = 6
+        }
+        if(posCM.contains(2) && posCM.contains(5)){
+            posicioM = 8
+        }else{
+            if (posCM.contains(2) && posCM.contains(8)){
+                posicioM = 5
             }else{
-                if (posC.contains(2) && posC.contains(6)){
-                    posicioM = 4
-                }else{
-                    if (posC.contains(4) && posC.contains(6)){
-                        posicioM = 2
-                    }
+                if (posCM.contains(5) && posCM.contains(8)){
+                    posicioM = 2
                 }
             }
+        }
+        if(posCM.contains(0) && posCM.contains(4)){
+            posicioM = 8
+        }else{
+            if (posCM.contains(0) && posCM.contains(8)){
+                posicioM = 4
+            }else{
+                if (posCM.contains(4) && posCM.contains(8)){
+                    posicioM = 0
+                }
+            }
+        }
+        if(posCM.contains(2) && posCM.contains(4)){
+            posicioM = 6
+        }else{
+            if (posCM.contains(2) && posCM.contains(6)){
+                posicioM = 4
+            }else{
+                if (posCM.contains(4) && posCM.contains(6)){
+                    posicioM = 2
+                }
+            }
+        }
 
         return posicioM
 
