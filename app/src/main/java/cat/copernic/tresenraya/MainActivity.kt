@@ -66,6 +66,13 @@ class MainActivity : AppCompatActivity() {
 
         var posicioM = pos
 
+        if(contador == 1 && tauler[4] == 1){
+            val num = listOf(0, 2, 6, 8)
+            posicioM = num.random()
+        }else if(contador == 1 && tauler[4] == 0){
+            posicioM = 4
+        }
+
         while(tauler[posicioM] !=0){
             posicioM = (0..8).random()
         }
@@ -163,90 +170,90 @@ class MainActivity : AppCompatActivity() {
         posC.sortedBy { it }
 
 
-            if(posC.contains(0) && posC.contains(1)){
+            if(posC.contains(0) && posC.contains(1) && tauler[2] == 0){
                 posicioM = 2
             }else{
-                if (posC.contains(0) && posC.contains(2)){
+                if (posC.contains(0) && posC.contains(2) && tauler[1] == 0){
                     posicioM = 1
                 }else{
-                    if (posC.contains(1) && posC.contains(2)){
+                    if (posC.contains(1) && posC.contains(2) && tauler[0] == 0){
                         posicioM = 0
                     }
                 }
             }
-            if(posC.contains(3) && posC.contains(4)){
+            if(posC.contains(3) && posC.contains(4) && tauler[5] == 0){
                 posicioM = 5
             }else{
-                if (posC.contains(3) && posC.contains(5)){
+                if (posC.contains(3) && posC.contains(5) && tauler[4] == 0){
                     posicioM = 4
                 }else{
-                    if (posC.contains(4) && posC.contains(5)){
+                    if (posC.contains(4) && posC.contains(5) && tauler[3] == 0){
                         posicioM = 3
                     }
                 }
             }
-            if(posC.contains(6) && posC.contains(7)){
+            if(posC.contains(6) && posC.contains(7) && tauler[8] == 0){
                 posicioM = 8
             }else{
-                if (posC.contains(6) && posC.contains(8)){
+                if (posC.contains(6) && posC.contains(8) && tauler[7] == 0){
                     posicioM = 7
                 }else{
-                    if (posC.contains(7) && posC.contains(8)){
+                    if (posC.contains(7) && posC.contains(8) && tauler[6] == 0){
                         posicioM = 6
                     }
                 }
             }
-            if(posC.contains(0) && posC.contains(3)){
+            if(posC.contains(0) && posC.contains(3) && tauler[6] == 0){
                 posicioM = 6
             }else{
-                if (posC.contains(0)  && posC.contains(6)){
+                if (posC.contains(0)  && posC.contains(6) && tauler[3] == 0){
                     posicioM = 3
                 }else{
-                    if (posC.contains(3) && posC.contains(6)){
+                    if (posC.contains(3) && posC.contains(6) && tauler[0] == 0){
                         posicioM = 0
                     }
                 }
             }
-            if(posC.contains(1) && posC.contains(4)){
+            if(posC.contains(1) && posC.contains(4) && tauler[7] == 0){
                 posicioM = 7
             }else{
-                if (posC.contains(1) && posC.contains(7)){
+                if (posC.contains(1) && posC.contains(7) && tauler[4] == 0){
                     posicioM = 4
                 }else{
-                    if (posC.contains(4) && posC.contains(7)){
+                    if (posC.contains(4) && posC.contains(7) && tauler[1] == 0){
                         posicioM = 1
                     }
                 }
             }
-            if(posC.contains(2) && posC.contains(5)){
+            if(posC.contains(2) && posC.contains(5) && tauler[8] == 0){
                 posicioM = 8
             }else{
-                if (posC.contains(2) && posC.contains(8)){
+                if (posC.contains(2) && posC.contains(8) && tauler[5] == 0){
                     posicioM = 5
                 }else{
-                    if (posC.contains(5) && posC.contains(8)){
+                    if (posC.contains(5) && posC.contains(8) && tauler[2] == 0){
                         posicioM = 2
                     }
                 }
             }
-            if(posC.contains(0) && posC.contains(4)){
+            if(posC.contains(0) && posC.contains(4) && tauler[8] == 0){
                 posicioM = 8
             }else{
-                if (posC.contains(0) && posC.contains(8)){
+                if (posC.contains(0) && posC.contains(8) && tauler[4] == 0){
                     posicioM = 4
                 }else{
-                    if (posC.contains(4) && posC.contains(8)){
+                    if (posC.contains(4) && posC.contains(8) && tauler[0] == 0){
                         posicioM = 0
                     }
                 }
             }
-            if(posC.contains(2) && posC.contains(4)){
+            if(posC.contains(2) && posC.contains(4) && tauler[6] == 0){
                 posicioM = 6
             }else{
-                if (posC.contains(2) && posC.contains(6)){
+                if (posC.contains(2) && posC.contains(6) && tauler[4] == 0){
                     posicioM = 4
                 }else{
-                    if (posC.contains(4) && posC.contains(6)){
+                    if (posC.contains(4) && posC.contains(6) && tauler[2] == 0){
                         posicioM = 2
                     }
                 }
@@ -256,90 +263,90 @@ class MainActivity : AppCompatActivity() {
         posCM.sortedBy { it }
 
 
-        if(posCM.contains(0) && posCM.contains(1)){
+        if(posCM.contains(0) && posCM.contains(1) && tauler[2] == 0){
             posicioM = 2
         }else{
-            if (posCM.contains(0) && posCM.contains(2)){
+            if (posCM.contains(0) && posCM.contains(2) && tauler[1] == 0){
                 posicioM = 1
             }else{
-                if (posCM.contains(1) && posCM.contains(2)){
+                if (posCM.contains(1) && posCM.contains(2) && tauler[0] == 0){
                     posicioM = 0
                 }
             }
         }
-        if(posCM.contains(3) && posCM.contains(4)){
+        if(posCM.contains(3) && posCM.contains(4) && tauler[5] == 0){
             posicioM = 5
         }else{
-            if (posCM.contains(3) && posCM.contains(5)){
+            if (posCM.contains(3) && posCM.contains(5) && tauler[4] == 0){
                 posicioM = 4
             }else{
-                if (posCM.contains(4) && posCM.contains(5)){
+                if (posCM.contains(4) && posCM.contains(5) && tauler[3] == 0){
                     posicioM = 3
                 }
             }
         }
-        if(posCM.contains(6) && posCM.contains(7)){
+        if(posCM.contains(6) && posCM.contains(7) && tauler[8] == 0){
             posicioM = 8
         }else{
-            if (posCM.contains(6) && posCM.contains(8)){
+            if (posCM.contains(6) && posCM.contains(8) && tauler[7] == 0){
                 posicioM = 7
             }else{
-                if (posCM.contains(7) && posCM.contains(8)){
+                if (posCM.contains(7) && posCM.contains(8) && tauler[6] == 0){
                     posicioM = 6
                 }
             }
         }
-        if(posCM.contains(0) && posCM.contains(3)){
+        if(posCM.contains(0) && posCM.contains(3) && tauler[6] == 0){
             posicioM = 6
         }else{
-            if (posCM.contains(0) && posCM.contains(6)){
+            if (posCM.contains(0) && posCM.contains(6) && tauler[3] == 0){
                 posicioM = 3
             }else{
-                if (posCM.contains(3) && posCM.contains(6)){
+                if (posCM.contains(3) && posCM.contains(6) && tauler[0] == 0){
                     posicioM = 0
                 }
             }
         }
-        if(posCM.contains(1) && posCM.contains(4)){
+        if(posCM.contains(1) && posCM.contains(4) && tauler[7] == 0){
             posicioM = 7
         }else{
-            if (posCM.contains(1) && posCM.contains(7)){
+            if (posCM.contains(1) && posCM.contains(7) && tauler[4] == 0){
                 posicioM = 4
             }else{
-                if (posCM.contains(4) && posCM.contains(7)){
+                if (posCM.contains(4) && posCM.contains(7) && tauler[1] == 0){
                     posicioM = 1
                 }
             }
         }
-        if(posCM.contains(2) && posCM.contains(5)){
+        if(posCM.contains(2) && posCM.contains(5) && tauler[8] == 0){
             posicioM = 8
         }else{
-            if (posCM.contains(2) && posCM.contains(8)){
+            if (posCM.contains(2) && posCM.contains(8) && tauler[5] == 0){
                 posicioM = 5
             }else{
-                if (posCM.contains(5) && posCM.contains(8)){
+                if (posCM.contains(5) && posCM.contains(8) && tauler[2] == 0){
                     posicioM = 2
                 }
             }
         }
-        if(posCM.contains(0) && posCM.contains(4)){
+        if(posCM.contains(0) && posCM.contains(4) && tauler[8] == 0){
             posicioM = 8
         }else{
-            if (posCM.contains(0) && posCM.contains(8)){
+            if (posCM.contains(0) && posCM.contains(8) && tauler[4] == 0){
                 posicioM = 4
             }else{
-                if (posCM.contains(4) && posCM.contains(8)){
+                if (posCM.contains(4) && posCM.contains(8) && tauler[0] == 0){
                     posicioM = 0
                 }
             }
         }
-        if(posCM.contains(2) && posCM.contains(4)){
+        if(posCM.contains(2) && posCM.contains(4) && tauler[6] == 0){
             posicioM = 6
         }else{
-            if (posCM.contains(2) && posCM.contains(6)){
+            if (posCM.contains(2) && posCM.contains(6) && tauler[4] == 0){
                 posicioM = 4
             }else{
-                if (posCM.contains(4) && posCM.contains(6)){
+                if (posCM.contains(4) && posCM.contains(6) && tauler[2] == 0){
                     posicioM = 2
                 }
             }
